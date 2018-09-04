@@ -3238,7 +3238,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 h5.tagline{
   font-weight: bold;
-  font-size: 14pt;
+  font-size: 16pt;
+  margin: 4px;
     span.orange{
       color: #e0592a;
     }
@@ -3257,6 +3258,12 @@ h5.tagline{
     span.blue{
       color: #3979b9;
     }
+    &:last-child{
+      margin-bottom: 6em;
+    }
+}
+p.tagline{
+  color: $color-bg-alt;
 }
 .password-content-title{
   color: $color-bg-alt;
