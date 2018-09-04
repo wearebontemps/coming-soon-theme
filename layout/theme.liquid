@@ -63,6 +63,22 @@
     document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
   </script>
 
+  <script>
+          window['friendbuy'] = window['friendbuy'] || [];
+          window['friendbuy'].push(['site', 'site-f917c2f6-www.shopbontemps.com']);
+          window['friendbuy'].push(['track', 'customer',
+              {
+                  id: '{{ customer.id }}',
+                  email: '{{ customer.email }}',
+                  first_name: '{{ customer.first_name }}',
+                  last_name: '{{ customer.last_name }}'
+              }
+          ]);
+          (function (f, r, n, d, b, y) {
+              b = f.createElement(r), y = f.getElementsByTagName(r)[0];b.async = 1;b.src = n;y.parentNode.insertBefore(b, y);
+          })(document, 'script', '//djnf6e5yyirys.cloudfront.net/js/friendbuy.min.js');
+ </script>
+
   <!--[if (lte IE 9) ]>{{ 'match-media.min.js' | asset_url | script_tag }}<![endif]-->
 
   {%- if template.directory == 'customers' -%}
