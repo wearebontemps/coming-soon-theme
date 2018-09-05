@@ -3271,6 +3271,9 @@ p.tagline{
 .password-content-title{
   color: $color-bg-alt;
   margin-bottom: 3em;
+  @media screen and (max-width: 600px){
+    margin-bottom: 1em;
+  }
 }
 .password-content-box{
   padding-bottom: 4em;
@@ -3278,12 +3281,15 @@ p.tagline{
     float: left;
     @media screen and (max-width: 600px){
       float: none;
+      width: 100%;
+      padding-top: 3em;
     }
   }
   .top-box{
     float: right;
     @media screen and (max-width: 600px){
       float: none;
+      width: 100%;
     }
   }
 }
