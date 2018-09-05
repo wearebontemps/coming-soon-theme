@@ -3218,7 +3218,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   background-color: $color-bg-alt;
 }
 .small-grid{
-  max-width: 40%;
+  max-width: 50%;
   margin: 0 auto;
   .grid__item{
     padding: 20px;
@@ -3274,6 +3274,18 @@ p.tagline{
 }
 .password-content-box{
   padding-bottom: 4em;
+  .bottom-box{
+    float: left;
+    @media screen and (max-width: 600px){
+      float: none;
+    }
+  }
+  .top-box{
+    float: right;
+    @media screen and (max-width: 600px){
+      float: none;
+    }
+  }
 }
 .password-message {
   max-width: 500px;
