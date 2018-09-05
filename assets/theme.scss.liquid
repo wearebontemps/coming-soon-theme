@@ -3178,6 +3178,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .password__title{
   font-size: 2em;
   font-weight: lighter;
+  text-transform: none;
 }
 .password-login {
   padding: 0 10px;
@@ -3235,6 +3236,9 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
       color: white;
     }
   }
+  @media screen and (max-width: 600px){
+    width: 100%;
+  }
 }
 h5.tagline{
   font-weight: bold;
@@ -3267,6 +3271,9 @@ p.tagline{
 .password-content-title{
   color: $color-bg-alt;
   margin-bottom: 3em;
+}
+.password-content-box{
+  padding-bottom: 4em;
 }
 .password-message {
   max-width: 500px;
