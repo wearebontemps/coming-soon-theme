@@ -3115,7 +3115,10 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 /*================ TEMPLATES ================*/
 /*============= Templates | Password =============*/
-
+@font-face {
+  font-family: 'Subway Black';
+  src: url('./Subway-Black');
+}
 .password-page {
   display: table;
   height: 100%;
@@ -3153,7 +3156,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   max-height: 100%;
   position: relative;
   padding: 0 3em;
-
+  font-family: Subway Black;
   @media screen and (max-width: 600px){
     width: 100%;
   }
@@ -3246,7 +3249,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     p{
       margin-top: 1em;
       font-size: 10px;
-      color: white;
+      color: #1f1f1f;
     }
   }
   @media screen and (max-width: 600px){
