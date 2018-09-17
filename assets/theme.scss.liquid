@@ -3418,6 +3418,7 @@ p.tagline{
 }
 .klaviyo-signup{
   width: 100%;
+  max-width: 500px;
   div[class*="StyledFormComponent"]{
     margin: 0;
     padding: 0;
@@ -3441,6 +3442,9 @@ p.tagline{
   align-items: center;
   justify-content: space-around;
   padding: 0 8em;
+  @media screen and (max-width: 652px){
+  padding: 0 1em;
+  }
 }
 .password__form-heading {
   margin-bottom: $gutter-site;
