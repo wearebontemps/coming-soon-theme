@@ -3114,8 +3114,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 /*================ TEMPLATES ================*/
 /*============= Templates | Password =============*/
 @font-face {
-  font-family: 'Subway';
-  src: url('./Subway-Black.ttf');
+  font-family: 'Cooper';
+  src: url('./CooperBlackStd.otf');
 }
 .password-page {
   height: 100%;
@@ -3322,10 +3322,13 @@ p.tagline{
   font-weight: bold;
   color: $color-bg-alt;
 }
+.cooper{
+  font-family: Cooper !important;
+
+}
 .password-content-title{
   color: $color-bg-alt;
   margin-bottom: 3em;
-  font-family: Subway;
   @media screen and (max-width: 652px){
     margin-bottom: 1em;
   }
@@ -3359,7 +3362,6 @@ p.tagline{
   }
 }
 .prefooter-box{
-  min-height: 480px;
   text-align: left;
   background-position: bottom right;
   background-size: cover;
