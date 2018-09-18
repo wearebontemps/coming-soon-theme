@@ -3371,7 +3371,7 @@ p.tagline{
     height: 100%;
     padding: 2em;
     padding-top: 4em;
-    margin: 0 !important;
+    margin: 0 auto !important;
     h2,p{
       color: white;
     }
@@ -3381,7 +3381,17 @@ p.tagline{
     }
     }
   }
-
+.password-background-box{
+  min-height: 400px;
+  background: rgba(235,153,53,1);
+  background: -moz-linear-gradient(top, rgba(235,153,53,1) 0%, rgba(240,168,67,1) 73%, rgba(240,189,87,1) 73%, rgba(240,189,87,1) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(235,153,53,1)), color-stop(73%, rgba(240,168,67,1)), color-stop(73%, rgba(240,189,87,1)), color-stop(100%, rgba(240,189,87,1)));
+  background: -webkit-linear-gradient(top, rgba(235,153,53,1) 0%, rgba(240,168,67,1) 73%, rgba(240,189,87,1) 73%, rgba(240,189,87,1) 100%);
+  background: -o-linear-gradient(top, rgba(235,153,53,1) 0%, rgba(240,168,67,1) 73%, rgba(240,189,87,1) 73%, rgba(240,189,87,1) 100%);
+  background: -ms-linear-gradient(top, rgba(235,153,53,1) 0%, rgba(240,168,67,1) 73%, rgba(240,189,87,1) 73%, rgba(240,189,87,1) 100%);
+  background: linear-gradient(to bottom, rgba(235,153,53,1) 0%, rgba(240,168,67,1) 73%, rgba(240,189,87,1) 73%, rgba(240,189,87,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eb9935', endColorstr='#f0bd57', GradientType=0 );
+}
 .password-message {
   max-width: 500px;
   margin: ($gutter-site * 1.5) auto ($gutter-site / 2);
