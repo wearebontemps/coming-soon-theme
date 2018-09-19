@@ -1359,8 +1359,8 @@ h6 {
   font-style: $font-style-header;
   font-weight: $font-weight-header;
   line-height: 1.2;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
+  overflow-wrap: normal;
+  word-wrap: normal;
 
   a {
     color: inherit;
@@ -1381,9 +1381,6 @@ h1 {
 
 h2 {
   font-size: em(floor($font-size-header * 0.78));
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-
   @include media-query($small) {
     font-size: em(floor(($font-size-header * 0.78) * 0.9));
   }
