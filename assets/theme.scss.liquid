@@ -3247,7 +3247,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 
 .password-main__inner {
   vertical-align: middle;
-  padding: 2em 0 0;
+  padding: 2em 0;
 }
 .password-mobile-header-image{
   margin: 2em auto;
@@ -3269,6 +3269,9 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 .password-icon-bar{
   background-color: $color-bg-alt;
+  .icon-bar-text{
+
+  }
 }
 .small-grid{
   max-width: 50%;
@@ -3289,8 +3292,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 .icon-bar-text{
   margin: 1em !important;
-  font-size: 1.25em;
-  color: #FA522A;
+  font-size: 1em;
 }
 h5.tagline{
   font-weight: bold;
@@ -3340,7 +3342,7 @@ p.tagline{
 .top-show{
   display: none;
   text-align: left;
-  padding: 2em 0;
+  padding: 0em 3em 4em;
   h2,p{
     color: #F94E25;
   }
@@ -3350,13 +3352,13 @@ p.tagline{
 }
 .bottom-show{
   display: block;
+  margin-bottom: 4em;
   @media screen and (max-width: 576px){
     display: none;
   }
 }
 .content-copy{
   @media screen and (max-width: 576px){
-    padding: 27.5px 55px;
   }
   h2{
     font-size: 2em;
@@ -3384,7 +3386,7 @@ p.tagline{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-around;
-    padding: 2em 3em;
+    padding: 4em 3em 0;
     @media screen and (max-width: 652px){
       float: none;
       width: 100%;
