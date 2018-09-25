@@ -3153,10 +3153,10 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     padding-left: 0;
     width: 100%;
   }
-  .header-inner{
-    @media screen and (min-width: 1300px){
-      max-width: 75%;
-    }
+}
+.header-inner{
+  @media screen and (min-width: 1300px){
+    max-width: 75%;
   }
 }
 .header-logo{
@@ -3283,9 +3283,6 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 .password-icon-bar{
   background-color: $color-bg-alt;
-  .icon-bar-text{
-
-  }
 }
 .small-grid{
   max-width: 50%;
@@ -3308,29 +3305,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   margin: 1em !important;
   font-size: 1em;
 }
-h5.tagline{
-  font-weight: bold;
-  font-size: 16pt;
-  margin: 4px;
-    span.orange{
-      color: #e0592a;
-    }
-    span.pink{
-      color: #e9aab3;
-    }
-    span.yellow{
-      color: #ffa400;
-    }
-    span.grey{
-      color: #979ba9;
-    }
-    span.light-blue{
-      color: #a6cfd3;
-    }
-    span.blue{
-      color: #3979b9;
-    }
-}
+
 p.tagline{
   letter-spacing: 2px;
   font-weight: bold;
@@ -3338,7 +3313,6 @@ p.tagline{
 }
 .cooper{
   font-family: Cooper !important;
-
 }
 .password-content-title{
   color: $color-bg-alt;
@@ -3372,18 +3346,16 @@ p.tagline{
   }
 }
 .content-copy{
-  @media screen and (max-width: 576px){
-  }
   h2{
     font-size: 2em;
-    @media screen and (max-width: 652px){
+    @media screen and (max-width: 576px){
     text-align: center;
     font-size: 1.75em;
     }
   }
   p{
     font-size: 16pt;
-    @media screen and (max-width: 652px){
+    @media screen and (max-width: 576px){
       text-align: center;
       font-size: 1em;
       padding-right: 0;
@@ -3413,7 +3385,6 @@ p.tagline{
     @media screen and (max-width: 652px){
       float: none;
       padding: 4em 3em 0;
-
       width: 100%;
     }
     h2,p{
@@ -3456,6 +3427,7 @@ p.tagline{
     }
     }
   }
+}
 .password-background-box{
   min-height: 100%;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(227,142,45,1)), color-stop(73%, rgba(240,170,72,1)), color-stop(73%, rgba(240,189,87,1)), color-stop(100%, rgba(240,194,57,1)));
