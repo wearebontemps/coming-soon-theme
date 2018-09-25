@@ -3145,7 +3145,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   max-height: 100%;
   position: relative;
@@ -3153,8 +3153,17 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     padding-left: 0;
     width: 100%;
   }
+  .header-inner{
+    @media screen and (min-width: 1300px){
+      max-width: 75%;
+    }
+  }
 }
-
+.header-logo{
+  @media screen and (max-width: 652px){
+    max-width: 110px;
+  }
+}
 .splash-button{
   color: white;
   padding: .25em 1em;
@@ -3224,7 +3233,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     font-size: 1em;
     padding-right: 0;
     padding: 1em 2em;
-    margin-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .password-login {
@@ -3366,9 +3376,18 @@ p.tagline{
   }
   h2{
     font-size: 2em;
+    @media screen and (max-width: 652px){
+    text-align: center;
+    font-size: 1.75em;
+    }
   }
   p{
     font-size: 16pt;
+    @media screen and (max-width: 652px){
+      text-align: center;
+      font-size: 1em;
+      padding-right: 0;
+    }
   }
 }
 .password-content-box{
@@ -3418,6 +3437,20 @@ p.tagline{
     h2,p{
       color: white;
     }
+    h2{
+      font-size: 2em;
+      @media screen and (max-width: 652px){
+        text-align: center;
+        font-size: 1.75em;
+      }
+    }
+    p{
+      font-size: 16pt;
+      @media screen and (max-width: 652px){
+        text-align: center;
+        font-size: 1em;
+        padding-right: 0;
+      }
     div{
       padding-top: 2em;
     }
@@ -3496,6 +3529,20 @@ p.tagline{
   @media screen and (max-width: 652px){
   padding: 0 1em;
   }
+  h2{
+    font-size: 2em;
+    @media screen and (max-width: 652px){
+      text-align: center;
+      font-size: 1.75em;
+    }
+  }
+  p{
+    font-size: 16pt;
+    @media screen and (max-width: 652px){
+      text-align: center;
+      font-size: 1em;
+      padding-right: 0;
+    }
 }
 .password__form-heading {
   margin-bottom: $gutter-site;
