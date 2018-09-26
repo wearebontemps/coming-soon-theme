@@ -3140,12 +3140,13 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 .header-grid{
   height: 100%;
+  min-height: 600px;
 }
 .splash-header-text{
   color: white;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
   max-height: 100%;
   position: relative;
@@ -3153,10 +3154,15 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     padding-left: 0;
     width: 100%;
   }
+  @media screen and (min-width: 1300px){
+    align-items: flex-end;
+  }
 }
 .header-inner{
+  max-width: 500px;
   @media screen and (min-width: 1300px){
-    max-width: 75%;
+    max-width: 600px;
+    padding-right: 100px;
   }
 }
 .header-logo-inner{
@@ -3210,7 +3216,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   text-transform: none;
   text-align: left;
   padding-top: 2em;
-  margin-left: 50px;
+  //margin-left: 50px;
   font-family: sans-serif;
   max-width: 100%;
   padding-right: 2em;
@@ -3228,7 +3234,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 .password__subtitle{
   margin: 0 0 2em 0;
   color: white;
-  margin-left: 50px;
+  //margin-left: 50px;
   text-align: left;
   padding-right: 2em;
   font-size: 1.25em;
@@ -3318,7 +3324,7 @@ p.tagline{
   color: $color-bg-alt;
 }
 .cooper{
-  font-family: Cooper !important;
+  font-family: 'Cooper' !important;
 }
 .password-content-title{
   color: $color-bg-alt;
@@ -3437,6 +3443,7 @@ p.tagline{
 }
 .password-background-box{
   min-height: 100%;
+  min-height: 350px;
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(227,142,45,1)), color-stop(73%, rgba(240,170,72,1)), color-stop(73%, rgba(240,189,87,1)), color-stop(100%, rgba(240,194,57,1)));
   background: -webkit-linear-gradient(top, rgba(227,142,45,1) 0%, rgba(240,170,72,1) 73%, rgba(240,189,87,1) 73%, rgba(240,194,57,1) 100%);
   background: -o-linear-gradient(top, rgba(227,142,45,1) 0%, rgba(240,170,72,1) 73%, rgba(240,189,87,1) 73%, rgba(240,194,57,1) 100%);
