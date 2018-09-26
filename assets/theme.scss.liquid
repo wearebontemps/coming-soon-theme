@@ -3128,7 +3128,7 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   background-size: cover;
   background-position: bottom;
   background-repeat: no-repeat;
-  //height: 600px;
+  min-height: 600px;
   @media screen and (max-width: 652px){
     background-position: left;
   }
@@ -3163,9 +3163,16 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
 }
 .header-inner{
   max-width: 500px;
+  text-align: left;
   @media screen and (min-width: 1300px){
     max-width: 600px;
     padding-right: 100px;
+  }
+  @media screen and (max-width: 880px ){
+    max-width: 350px;
+  }
+  @media screen and (max-width: 652px){
+    text-align: center;
   }
 }
 .header-logo-inner{
@@ -3222,8 +3229,8 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
   //margin-left: 50px;
   font-family: sans-serif;
   max-width: 100%;
-  padding-right: 2em;
-  @media screen and (max-width: 850px ){
+  padding-right: 1em;
+  @media screen and (max-width: 880px ){
     font-size: 2em;
   }
   @media screen and (max-width: 652px){
