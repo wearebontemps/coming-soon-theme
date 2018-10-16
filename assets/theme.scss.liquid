@@ -3139,6 +3139,14 @@ $color-blankstate-background: rgba($color-body-text, 0.1);
     background-position: center;
     background-image: url('{{ "5-xwide-2000w.jpg" | asset_url }}') !important;
   }
+  &.lower {
+    @media screen and (min-width: 1200px){
+      background-position: center;
+    }
+    @media screen and (max-width: 652px){
+      background-position: center;
+    }
+  }
 }
 .password-form-message {
   max-width: 500px;
